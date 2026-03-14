@@ -1,0 +1,43 @@
+{
+  "name": "Shivraj Singh",
+  "title": "Full Stack Web Developer",
+  "intro": "I build modern web applications using MERN Stack.",
+  "about": "Hello! My name is Shivraj Singh, and I am a passionate Software Engineer and Web Developer who enjoys building modern, scalable, and user-friendly web applications. I am currently pursuing my Bachelor of Technology in Computer Science Engineering from Chameli Devi Group of Institute, Indore, where I am continuously improving my programming, problem-solving, and development skills.\n\nFrom the beginning of my journey in computer science, I have always been interested in understanding how technology works and how digital products are created. This curiosity led me to explore programming languages, web technologies, and software development tools. Over time, I developed a strong interest in full-stack web development, where I can build both the frontend and backend of web applications.\n\nMy main focus is on creating responsive, interactive, and efficient web applications that provide a great user experience. I enjoy writing clean and maintainable code while following modern development practices.\n\nI have experience working with technologies such as HTML, CSS, JavaScript, React.js, Node.js, MongoDB, and MySQL. I also use tools like Git and GitHub for version control and collaborative development.\n\nOne of the things I enjoy most about programming is solving problems and building projects that have real-world applications. Through my academic learning and personal projects, I have developed several web applications that demonstrate my ability to design and implement modern web solutions.\n\nOne of my projects is Bhartiya Virasat, a responsive web application developed using React.js. The goal of this project was to showcase India’s rich cultural heritage, historical places, and traditions through a modern digital platform. The application uses reusable components, dynamic routing, and efficient state management to provide a smooth user experience. I focused on creating a visually appealing interface with modern CSS styling and responsive layouts so that users can explore cultural information easily across different devices.\n\nAnother project I developed is Ujjwal Bharat, a responsive cattle feed information website built using React.js, HTML, CSS, and JavaScript. This platform provides useful information about cattle feed products and livestock nutrition for farmers and dairy owners. The project demonstrates my ability to design and implement reusable components and dynamic content rendering. I also focused on creating a clean, accessible interface that works seamlessly on both mobile and desktop devices.\n\nI have also developed a Full-Stack Todo Application using the MERN stack (MongoDB, Express.js, React, and Node.js). This project allowed me to gain practical experience in building complete web applications with both frontend and backend functionality. I implemented REST APIs, authentication using JWT, and role-based access control to ensure secure user operations. The application also includes efficient data storage with MongoDB and responsive user interface design with React.\n\nAlong with web development, I also have knowledge of programming languages such as C and Python. These languages have helped me strengthen my understanding of data structures, algorithms, and logical problem solving.\n\nI believe that continuous learning is essential in the technology field. Therefore, I regularly explore new tools, frameworks, and development techniques to improve my skills and stay updated with modern trends in software development.\n\nMy goal is to become a highly skilled Full-Stack Developer who can build scalable applications and contribute to innovative technology solutions. I am passionate about creating meaningful digital products that can help people and solve real problems.\n\nIn addition to technical skills, I also value clean code practices, teamwork, communication, and problem-solving abilities. I enjoy collaborating with other developers, learning from different perspectives, and working on challenging projects.\n\nI am always excited to take on new challenges, explore new technologies, and grow as a developer. My portfolio showcases some of the projects I have built during my learning journey, and I look forward to building many more impactful applications in the future.",
+  "skills": {
+    "frontend": ["HTML", "CSS", "JavaScript", "React"],
+    "backend": ["Node.js", "Express.js"],
+    "database": ["MongoDB", "MySQL"],
+    "programming": ["C", "Python"]
+  },
+  "projects": [
+    {
+      "name": "Bhartiya Virasat",
+      "description": "A responsive web application to showcase India’s rich cultural heritage, historical places, and traditions using React.js.",
+      "github": "https://github.com/yourusername/bhartiya-virasat",
+      "live": "https://bhartiyavirasat.vercel.app/"
+    },
+    {
+      "name": "Ujjwal Bharat",
+      "description": "A responsive cattle feed information website for farmers and dairy owners, built with React.js, HTML, CSS, and JavaScript.",
+      "github": "https://github.com/yourusername/ujjwal-bharat",
+      "live": "https://ujjwalbharat.vercel.app/"
+    },
+    {
+      "name": "MERN Todo App",
+      "description": "A full-stack Todo Application using MongoDB, Express.js, React, and Node.js with authentication and role-based access control.",
+      "github": "https://github.com/yourusername/mern-todo-app",
+      "live": "https://merntodo.vercel.app/"
+    }
+  ],
+  "education": [
+    "B.Tech CSE – Chameli Devi Group of Institute (2026)",
+    "Class 12 – 78%",
+    "Class 10 – 86%"
+  ],
+  "contact": {
+    "email": "shivrajsingh@email.com",
+    "linkedin": "https://linkedin.com/in/shivrajsingh",
+    "github": "https://github.com/yourusername",
+    "phone": "+91-XXXXXXXXXX"
+  }
+}
