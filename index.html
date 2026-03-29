@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -27,7 +27,7 @@
     </div>
   </aside>
 
-  <!-- Mobile Menu Toggle -->
+
   <button class="mobile-menu-toggle" id="mobileMenuToggle" onclick="toggleMobileMenu()">
     <span></span>
     <span></span>
@@ -35,7 +35,7 @@
   </button>
 
   <main>
-    <!-- Hero Section -->
+   
     <section id="home" class="hero">
       <div class="hero-content">
         <div class="hero-text-container">
@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <!-- About Section -->
+  
     <section id="about" class="container about">
       <h2 class="section-title">About Me</h2>
       <p>Hello! My name is Shivraj Singh, and I am a passionate Software Engineer and Web Developer who enjoys building modern, scalable, and user-friendly web applications. I am currently pursuing my Bachelor of Technology in Computer Science Engineering from Chameli Devi Group of Institute, Indore.</p>
@@ -68,7 +68,6 @@
       <p>My main focus is on creating responsive, interactive, and efficient web applications that provide a great user experience. I enjoy writing clean and maintainable code while following modern development practices.</p>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="container">
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
@@ -105,7 +104,7 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+   
     <section id="projects" class="container">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
@@ -130,7 +129,7 @@
       </div>
     </section>
 
-    <!-- Education Section -->
+    
     <section id="education" class="container">
       <h2 class="section-title">Education</h2>
       <div class="education-grid">
@@ -152,7 +151,7 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact" class="container">
       <h2 class="section-title">Contact Me</h2>
       <div class="contact-content">
@@ -177,7 +176,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="footer">
       <div class="social-links">
         <a href="https://github.com/shivrajsingh12" target="_blank">GitHub</a> |
@@ -263,5 +262,413 @@
         });
     }
   </script>
+</body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Shivraj Singh Chouhan | Portfolio</title>
+  <!-- Google Fonts & Simple Icons (Feather-like via Lucide CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #1e1e1e;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    /* custom utilities */
+    .star-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: currentColor;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    .tear-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .grid-bg {
+      background-image: linear-gradient(#d0d0cc 1px, transparent 1px), linear-gradient(90deg, #d0d0cc 1px, transparent 1px);
+      background-size: 28px 28px;
+      background-color: #f0efea;
+    }
+    .polaroid-shadow {
+      box-shadow: 2px 4px 16px rgba(0,0,0,0.5);
+    }
+    .contact-badge {
+      transition: all 0.2s ease;
+    }
+    .contact-badge:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+    @media (max-width: 640px) {
+      .portfolio-title {
+        font-size: 48px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-portfolio" style="max-width: 1400px; margin: 0 auto; background-color: #1e1e1e;">
+  
+  <!-- ========== TOP GRID SECTION ========== -->
+  <div style="background-color: #f0efea; position: relative; overflow: hidden;">
+    <div class="grid-bg" style="position: absolute; inset: 0;"></div>
+    
+    <!-- decorative starbursts -->
+    <div style="position: absolute; top: -8px; left: -8px; width: 52px; height: 52px; background-color: #F5A623; clip-path: polygon(50% 5%, 61% 35%, 95% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 5% 35%, 39% 35%); opacity: 0.9;"></div>
+    <div style="position: absolute; top: 20px; right: -6px; width: 44px; height: 44px; background-color: #E8920A; clip-path: polygon(50% 5%, 61% 35%, 95% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 5% 35%, 39% 35%); opacity: 0.8;"></div>
+    <div style="position: absolute; top: 68px; right: 48px; color: #1e1e1e; opacity: 0.7;"><div class="star-icon" style="width:18px; height:18px;"></div></div>
+    
+    <!-- title block -->
+    <div style="position: relative; display: flex; flex-direction: column; align-items: center; padding: 48px 24px 32px 24px;">
+      <div style="margin-bottom: 8px; z-index: 2;">
+        <div style="border: 2px solid #1e1e1e; border-radius: 40px; background-color: #f0efea; font-family: 'Georgia', serif; font-size: 15px; font-weight: 600; letter-spacing: 0.05em; color: #1e1e1e; padding: 2px 18px; line-height: 1.6;">2026</div>
+      </div>
+      <div style="font-family: 'Georgia', 'Times New Roman', serif; font-size: clamp(52px, 14vw, 72px); font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; line-height: 1; text-align: center;">
+        <span>S</span><span>h</span><span>i</span><span>v</span><span >r</span><span>a</span><span style="position: relative; display: inline-block;">j<span style="position: absolute; width: 18px; height: 18px; background-color: #1a1a1a; border-radius: 50%; bottom: 4px; left: -2px;"></span></span>
+
+         <span> </span><span>S</span><span>i</span><span>n</span><span>g</span><span>h</span><span></span>
+
+        <span> </span><span>C</span><span>h</span><span>o</span><span>u</span><span>h</span><span>a</span><span>n</span>
+      </div>
+      <p style="margin-top: 12px; font-size: 13px; color: #1e1e1e; letter-spacing: 0.04em; font-weight: 400; text-align: center;">Frontend Developer&nbsp;<span style="color:#E8920A; font-weight:700;">✦</span>&nbsp;React.js&nbsp;<span style="color:#E8920A; font-weight:700;"></span>&nbsp;</p>
+    </div>
+  </div>
+  
+  <!-- torn paper edge -->
+  <div style="position: relative; width: 100%; height: 60px; margin-top: -2px; overflow: hidden;">
+    <svg viewBox="0 0 700 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+      <path d="M0,0 L0,30 Q10,10 25,28 Q40,46 60,22 Q75,5 95,32 Q115,55 135,20 Q150,0 175,35 Q195,55 215,18 Q235,0 255,30 Q270,50 295,15 Q315,0 335,38 Q355,55 375,20 Q395,0 415,32 Q435,55 455,18 Q475,0 495,35 Q515,55 535,22 Q555,5 575,38 Q595,60 615,25 Q635,5 655,30 Q675,50 700,20 L700,0 Z" fill="#f0efea"/>
+      <path d="M0,30 Q10,10 25,28 Q40,46 60,22 Q75,5 95,32 Q115,55 135,20 Q150,0 175,35 Q195,55 215,18 Q235,0 255,30 Q270,50 295,15 Q315,0 335,38 Q355,55 375,20 Q395,0 415,32 Q435,55 455,18 Q475,0 495,35 Q515,55 535,22 Q555,5 575,38 Q595,60 615,25 Q635,5 655,30 Q675,50 700,20 L700,60 L0,60 Z" fill="#1e1e1e"/>
+    </svg>
+  </div>
+  
+  <!-- ========== DARK SECTION: MAIN CONTENT ========== -->
+  <div style="background-color: #1e1e1e; padding: 48px 28px 80px 28px;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      
+      <!-- HELLO + PHOTO ROW (dynamic from central data) -->
+      <div id="profileRow" style="display: flex; flex-direction: column; gap: 48px; align-items: flex-start; margin-bottom: 32px;"></div>
+      
+      <!-- EDUCATION + EXPERIENCE + TECH ROW -->
+      <div id="expEduRow" style="display: flex; flex-direction: column; gap: 48px; margin-top: 32px;"></div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  // =========================================================
+  // 🧩 REPLACED WITH SHIVRAJ SINGH CHOUHAN'S RESUME DATA
+  // =========================================================
+  const portfolioData = {
+    // Basic identity
+    name: "Shivraj Singh Chouhan",
+    role: "Computer Science Student | Full Stack Developer",
+    summary: "Motivated Computer Science student with a strong interest in software development and problem-solving. Skilled in programming, data structures, and modern web technologies, with hands-on experience in academic projects. Passionate about learning new technologies and building practical applications, with a focus on developing efficient and scalable solutions.",
+    location: "Sehore, India",
+    availability: "Open for internships & opportunities",
+    
+    // Contact & social
+ phone: "+91 9691158805",
+ email: "shivrajbana2003@gmail.com",
+
+linkedin: "https://www.linkedin.com/in/shivraj-sigh12/",
+github: "https://github.com/shivrajsingh12",
+leetcode: "https://leetcode.com/u/Shivraj_singh12/",
+instagram: "https://www.instagram.com/kunwar_shivrajsingh01/",
+
+// 👇 ADD THESE (VISIBLE NAMES)
+linkedinName: "linkedin_shivrajsigh12",
+githubName: "github_shivrajsingh12",
+leetcodeName: "leetcode_shivraj_singh12",
+instagramName: "instagram_kunwar_shivrajsingh01",
+
+
+    // Photo (professional placeholder - you can replace with actual image URL)
+    photoUrl: "https://ui-avatars.com/api/?background=E8920A&color=fff&bold=true&size=400&name=SC&length=2&fontsize=0.6",
+    
+    // Personal traits (based on resume & developer attributes)
+    personalTraits: ["Problem Solver", "Quick Learner", "Team Collaboration", "Creative Thinker", "Attention to Detail"],
+    
+    // Tech stack based on Skills from resume
+    software: ["C", "C++", "Python", "HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Git"],
+    
+    // Education (from resume: College, Class 12th, Class 10th)
+    education: [
+      { id: "edu1", degree: "Bachelor of Technology (B.Tech) in Computer Science Engineering (CSE)", institution: "Chameli Devi Group of Institutions, Indore", duration: "2022 – 2026 (CGPA: 6.5/10.0)" },
+      { id: "edu2", degree: "Class 12th (Higher Secondary)", institution: "Nutan Higher Secondary School, Sehore", duration: "2022 | 78%" },
+      { id: "edu3", degree: "Class 10th (High School)", institution: "Nutan Higher Secondary School, Sehore", duration: "2020 | 86%" }
+    ],
+    
+    // Projects from resume transformed into Experience/Work style (since resume has strong projects)
+    experiences: [
+      {
+        id: "exp1",
+        role: "Frontend Developer (Project)",
+        company: "Bharatiya Virasat",
+        responsibilities: [
+          "Developed responsive web app using React.js showcasing India's cultural heritage, historical places & traditions.",
+          "Implemented reusable components, dynamic routing, and state management for smooth navigation.",
+          "Designed interactive UI with modern CSS and responsive layouts, optimized performance for engaging user experience.",
+        ],
+        link: "https://bharatiyavirasat.vercel.app/"
+      },
+      {
+        id: "exp2",
+        role: "React Developer (Project)",
+        company: "Ujjwal Bharat",
+        responsibilities: [
+          "Created responsive Cattle Feed Information Website using React.js, HTML, CSS, JavaScript.",
+          "Developed reusable React components with dynamic content rendering for cattle feed types and livestock nutrition.",
+          "Focused on clean UI with modern styling, ensuring mobile and desktop accessibility.",
+        ],
+        link: "https://dulcet-platypus-7c95a6.netlify.app/"
+      },
+      {
+        id: "exp3",
+        role: "Machine Learning Engineer (Academic Project)",
+        company: "Multiple Face Recognition System",
+        responsibilities: [
+          "Built web-based face recognition system using HTML, CSS, JavaScript frontend and Python Flask (MVC) backend.",
+          "Implemented CNN (Convolutional Neural Network) model for real-time multiple face detection & recognition.",
+          "Engineered efficient face identification with optimized performance and user-friendly interface."
+        ],
+        link: "#"
+      }
+    ],
+    
+    // highlights (achievements from resume)
+    highlights: ["✨ 3+ Major Projects", "🚀 React.js & Next.js Specialist", "🎯 CNN & Flask Integration", "📱 Responsive Web Design"],
+    
+    // Additional note
+    extraNote: "Available for freelance & collaborative projects"
+  };
+  
+  // ---------- Helper to render everything dynamically ----------
+  function renderPortfolio() {
+    const data = portfolioData;
+    
+    // 1) Render Profile Row (Hello + Polaroid + contact)
+    const profileRow = document.getElementById("profileRow");
+    if (profileRow) {
+      // initials for placeholder
+      const initials = data.name.split(" ").map(n => n[0]).join("").toUpperCase() || "SC";
+      const imgSrc =  `https://media.licdn.com/dms/image/v2/D4D03AQEQE25UvZk0lg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1702565979696?e=1776297600&v=beta&t=olZ_H1wu13hbYRuCMQNj2S01sg5ZyPe-gdskcr8ly08`;
+      
+      profileRow.innerHTML = `
+        <!-- Polaroid photo block -->
+        <div style="flex-shrink: 0; width: 400px; max-width: 400px;">
+          <div style="background-color: #ffffff; padding: 6px 6px 30px 6px; transform: rotate(-1.5deg); position: relative;" class="polaroid-shadow">
+            <div style="position: absolute; top: -10px; left: -10px; font-size: 26px; z-index: 10;">👨‍💻</div>
+            <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 36px; height: 14px; background-color: rgba(220,200,150,0.85); border-radius: 2px; z-index: 10;"></div>
+            <div style="position: relative; overflow: hidden; height: 400px; background-color: #E8920A;">
+              <img src="${imgSrc}" alt="${data.name}" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; bottom: 20px; left: 16px; font-size: 28px;">⚡</div>
+              <div style="position: absolute; bottom: 18px; left: 30px; width: 60px; height: 28px; border: 3px solid #ffffff; border-radius: 50%; transform: rotate(-15deg); opacity: 0.85;"></div>
+            </div>
+            <div style="position: absolute; bottom: 6px; right: -6px; font-size: 22px; z-index: 10;">😎</div>
+            <p style="text-align: center; margin-top: 8px; color: #1a1a1a; font-size: 18px; font-weight: 700; letter-spacing: 0.02em;">${data.name}</p>
+          </div>
+        </div>
+        
+        <!-- Hello & contact section -->
+        <div style="flex: 1; min-width: 0;">
+          <h2 style="font-family: 'Georgia', serif; font-size: 30px; font-weight: 700; color: #ffffff; letter-spacing: 0.01em; margin-bottom: 10px; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px;">Hello !</h2>
+          <p style="font-size: 18px; color: #e0e0e0; line-height: 1.65; margin-bottom: 20px; max-width: auto;">${data.summary}</p>
+          
+          <h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 700; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin-bottom: 12px;">Contact</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px 20px; max-width: auto;">
+            ${data.phone ? `
+              <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+                <div style="background-color: #25D366; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+                <span style="font-size: 18px; color: #e0e0e0; font-weight: 500;">${data.phone}</span>
+              </div>
+            ` : ''}
+            ${data.email ? `
+  <a href="mailto:${data.email}" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background-color: #EA4335; width: 28px; height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+        ✉️
+      </div>
+
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.email}
+      </span>
+
+    </div>
+  </a>
+` : ''}
+          ${data.linkedin ? `
+  <a href="${data.linkedin}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background-color: #0077b5; width: 30px; height: 30px; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+        <span style="color:white; font-size:15px; font-weight:bold;">in</span>
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.linkedinName}
+      </span>
+    </div>
+  </a>
+` : ''}
+${data.github ? `
+  <a href="${data.github}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background-color: #333; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <span style="color:white; font-size:15px;">🐙</span>
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.githubName}
+      </span>
+    </div>
+  </a>
+` : ''}
+
+${data.leetcode ? `
+  <a href="${data.leetcode}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background-color: #FFA116; width: 30px; height: 30px; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+        <span style="color:white; font-size:15px;">💻</span>
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.leetcodeName}
+      </span>
+    </div>
+  </a>
+` : ''}
+          ${data.instagram ? `
+  <a href="${data.instagram}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        📸
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.instagramName}
+      </span>
+    </div>
+  </a>
+` : ''}
+          </div>
+        </div>
+      `;
+      
+      // make the row flex on desktop
+      profileRow.style.display = "flex";
+      profileRow.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+      profileRow.style.gap = "40px";
+      profileRow.style.alignItems = "flex-start";
+      window.addEventListener('resize', () => {
+        profileRow.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+      });
+    }
+    
+    // 2) Render Education + Experience + Tech stack (two column layout)
+    const expEduRow = document.getElementById("expEduRow");
+    if (expEduRow) {
+      // Education HTML (with CGPA & percentages)
+      let eduHtml = `<div style="width: 100%; max-width: 420px; flex-shrink: 0;">
+        <h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin-bottom: 14px;">Education</h3>`;
+      if (data.education && data.education.length) {
+        data.education.forEach(edu => {
+          eduHtml += `
+            <div style="margin-bottom: 20px;">
+              ${edu.duration ? `<p style="font-size: 20px; color: #D4A017; margin-bottom: 4px; font-weight: 500;">${edu.duration}</p>` : ''}
+              ${edu.institution ? `<p style="font-size: 14px; font-weight: 700; color: #ffffff; line-height: 1.3; margin-bottom: 4px;">${edu.institution}</p>` : ''}
+              ${edu.degree ? `<p style="font-size: 10px; color: #aaaaaa; font-style: italic;">${edu.degree}</p>` : ''}
+            </div>
+          `;
+        });
+      } else {
+        eduHtml += `<p style="font-size: 11px; color: #aaa;">Education details will appear here.</p>`;
+      }
+      
+      // Tech stack (based on resume skills)
+      eduHtml += `<h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin: 32px 0 12px 0;">Tech Stack</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">`;
+      if (data.software && data.software.length) {
+        data.software.forEach(tool => {
+          eduHtml += `<span style="border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; padding: 5px 14px; font-size: 13px; color: #e0e0e0; background-color: rgba(255,255,255,0.06); font-weight: 600;">${tool}</span>`;
+        });
+      } else {
+        eduHtml += `<span style="color:#aaa;">Add software/tools in data</span>`;
+      }
+      eduHtml += `</div>`;
+      
+      // Personal traits based on summary
+      eduHtml += `<p style="font-size: 15px; color: #aaaaaa; margin-top: 28px; margin-bottom: 6px; font-weight: 500;">Personal</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">`;
+      if (data.personalTraits && data.personalTraits.length) {
+        data.personalTraits.forEach(trait => {
+          eduHtml += `<span style="border: 1px solid #888888; border-radius: 20px; padding: 3px 12px; font-size: 12px; color: #cccccc; font-style: italic;">${trait}</span>`;
+        });
+      } else {
+        eduHtml += `<span style="color:#aaa;">Add personal traits</span>`;
+      }
+      eduHtml += `</div></div>`;
+      
+      // Experience column (Projects from resume)
+      let expHtml = `<div style="flex: 1; min-width: 0;">
+        <h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin-bottom: 20px;">Featured Projects</h3>`;
+      if (data.experiences && data.experiences.length) {
+        data.experiences.forEach(exp => {
+          // highlight project link if any responsibility includes url
+          let respText = exp.responsibilities.join(" • ");
+          expHtml += `
+            <div style="margin-bottom: 28px;">
+              ${exp.duration ? `<p style="font-size: 11px; color: #D4A017; margin-bottom: 4px; font-weight: 500;">${exp.duration}</p>` : ''}
+              ${exp.company ? `<p style="font-size: 15px; font-weight: 700; color: #ffffff; line-height: 1.2; margin-bottom: 4px;">${exp.company}</p>` : ''}
+              ${exp.role ? `<p style="font-size: 11px; color: #bbbbbb; font-style: italic; margin-bottom: 6px;">${exp.role}</p>` : ''}
+              <p style="font-size: 16px; color: #cccccc; line-height: 1.5;">${respText}</p>
+              <a href="${exp.link}" target="_blank" style="color: #F44336; text-decoration: underline;">View Project</a>
+
+            </div>
+          `;
+        });
+      } else {
+        expHtml += `<p style="font-size: 12px; color: #aaa;">Project showcase will appear here.</p>`;
+      }
+      expHtml += `</div>`;
+      
+      expEduRow.innerHTML = `<div style="display: flex; flex-direction: column; gap: 48px; width: 100%;">${eduHtml}${expHtml}</div>`;
+      const innerContainer = expEduRow.firstChild;
+      if (innerContainer) {
+        innerContainer.style.display = "flex";
+        innerContainer.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+        innerContainer.style.gap = "48px";
+        window.addEventListener('resize', () => {
+          if (innerContainer) innerContainer.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+        });
+      }
+    }
+    
+    // Optional: small GSAP fade animation (lightweight)
+    gsap.fromTo(".main-portfolio", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" });
+    gsap.fromTo("#profileRow > div", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.6, delay: 0.2 });
+    gsap.fromTo("#expEduRow", { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, delay: 0.4 });
+  }
+  
+  // Run after page load
+  window.addEventListener("DOMContentLoaded", () => {
+    renderPortfolio();
+  });
+</script>
 </body>
 </html>
